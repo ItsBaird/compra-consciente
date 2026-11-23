@@ -234,3 +234,6 @@ tr.strong td, tr.strong th { background: var(--primary-l); font-weight: 700; }
   .meto-bar { grid-template-columns: 24px minmax(0, 1fr); }
   .meto-bar-v { grid-column: 1 / -1; }
 }
+
+/* Banner decorativo del Perfil */
+.banner { display: block; width: 100%; height: clamp(90px, 16vw, 150px); object-fit: cover; object-position: center; border-radius: 16px; border: 1px solid var(--border); background: #fff; }

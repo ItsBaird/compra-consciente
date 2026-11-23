@@ -4,6 +4,7 @@ import { ArrowRight, Info } from 'lucide-react'
 import { InfoPop, NumField } from '../components/common'
 import { validarPerfil } from '../domain/calc'
 import { useApp } from '../store'
+import banner from '../assets/banner.webp'
 
 export default function Perfil() {
   const { state, dispatch } = useApp()
@@ -30,6 +31,8 @@ export default function Perfil() {
   }
 
   return (
+    <div className="stack">
+    <img className="banner" src={banner} width={1024} height={205} alt="" decoding="async" />
     <div className="page-grid">
       <motion.div variants={lista} initial="hidden" animate="show" className="stack">
         <motion.div variants={item}>
@@ -129,6 +132,7 @@ export default function Perfil() {
           </ol>
         </div>
       </aside>
+    </div>
     </div>
   )
 }
