@@ -32,7 +32,7 @@ export default function Perfil() {
 
   return (
     <div className="stack">
-    <img className="banner" src={banner} width={1024} height={205} alt="" decoding="async" />
+    <img className="hero-img" src={banner} width={1024} height={205} alt="" decoding="async" />
     <div className="page-grid">
       <motion.div variants={lista} initial="hidden" animate="show" className="stack">
         <motion.div variants={item}>

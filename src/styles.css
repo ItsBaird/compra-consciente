@@ -182,11 +182,23 @@ tr.strong td, tr.strong th { background: var(--primary-l); font-weight: 700; }
 .sources small { color: var(--text2); }
 .sources a { display: inline-flex; gap: 4px; align-items: center; width: fit-content; min-height: 32px; }
 
+@media (max-width: 1040px) {
+  .alt-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 640px) {
+  .alt-grid, .two, .three { grid-template-columns: 1fr; }
+  .alt-card .three { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
+  .card { padding: 18px; }
+}
 @media (max-width: 900px) {
   .page-grid { grid-template-columns: 1fr; }
   .side { position: static; }
-  .alt-grid, .two, .three,   .steps { order: 3; width: 100%; margin: 0; }
-  .steps ol { overflow-x: auto; }
+  .app-header { position: static; }
+  .header-row { gap: 8px 16px; }
+  .steps { order: 3; width: 100%; margin: 0; }
+  .steps ol { width: 100%; }
+  .steps li { flex: 1 1 0; min-width: 0; }
+  .step { width: 100%; justify-content: center; padding: 0 8px; font-size: .9rem; }
   .bars li { grid-template-columns: 24px minmax(0, 1fr); }
   .bar-val { grid-column: 1 / -1; }
   h1 { font-size: 1.6rem; }
@@ -236,4 +248,4 @@ tr.strong td, tr.strong th { background: var(--primary-l); font-weight: 700; }
 }
 
 /* Banner decorativo del Perfil */
-.banner { display: block; width: 100%; height: clamp(90px, 16vw, 150px); object-fit: cover; object-position: center; border-radius: 16px; border: 1px solid var(--border); background: #fff; }
+.hero-img { display: block; width: 100%; height: clamp(90px, 16vw, 150px); object-fit: cover; object-position: center; border-radius: 16px; border: 1px solid var(--border); background: #fff; }
