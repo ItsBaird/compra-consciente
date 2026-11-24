@@ -7,8 +7,8 @@ export const FUENTES = [
   },
   {
     uso: 'Requisitos mínimos',
-    fuente: 'Minambiente, fichas técnicas con criterios ambientales, ficha 20 «Equipos tecnológicos y periféricos»',
-    nota: '',
+    fuente: 'Minambiente, Ficha técnica con criterios ambientales para equipos tecnológicos y periféricos (2025)',
+    nota: 'Págs. 90 a 95 del documento «Nuevas fichas técnicas con criterios ambientales 2019-2025». De ahí sale el requisito RoHS; la retoma con gestor autorizado la define la entidad.',
     url: 'https://www.minambiente.gov.co/documento-entidad/nuevas-fichas-tecnicas-con-criterios-ambientales-2019-2025/',
   },
   {
